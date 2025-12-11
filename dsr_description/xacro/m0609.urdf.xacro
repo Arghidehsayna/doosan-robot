@@ -14,7 +14,7 @@
      <xacro:include filename="$(find dsr_description)/xacro/macro.m0609.blue.xacro" />
   </xacro:if>
 
-  <xacro:m0609 namespace="$(arg namespace)"/>
+  <xacro:m0609 namespace="dsr01m0609"/>
 
   <link name="world" />
 

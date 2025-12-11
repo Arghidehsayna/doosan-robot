@@ -47,7 +47,7 @@
     <group if="$(eval arg('model') == 'm0609')">
         <remap from="joint_states" to="/dsrm0609/joint_states"/>
         <include file="$(find moveit_config_m0609)/launch/m0609.launch" ns="$(arg ns)$(arg model)">
-            <arg name="fake_execution" value="false"/>
+            <arg name="fake_execution" value="true"/>
             <arg name="color" value="$(arg color)"/>
         </include>
     </group>
@@ -105,4 +105,7 @@
             <arg name="color" value="$(arg color)"/>
         </include>
     </group>
+
+
+
 </launch>
